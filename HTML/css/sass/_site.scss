@@ -1,0 +1,16 @@
+html,
+  body,
+    ul,
+      ol,
+        table
+          {
+          padding: 2px;
+          margin: auto;
+        }
+//mixin by creating round ends on points
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}

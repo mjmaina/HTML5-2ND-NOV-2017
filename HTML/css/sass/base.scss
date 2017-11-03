@@ -1,0 +1,93 @@
+//base css
+@import "site";
+$font-family: Helvetica, sans-serif;
+$primary-color: #FGEHTU;
+$position: center;
+$colour: black;
+$height: 50px;
+body {
+      font: 100%  $font-family;
+      background-color: $primary-color;
+
+      }
+
+
+//header styling
+#header { text-align: $position; font-size: 25px;
+  height: 60px;
+
+  ul {
+
+      height: $height;
+      background-color: $colour;
+      margin-top: 0px;
+      padding: 0px;
+      list-style: none;
+      }
+
+      li { display: inline-block; padding:10px;}
+
+          }
+
+      a {
+            position: center;
+            color: white;
+            padding: 0px 20px;
+            text-decoration: none;
+            border: dotted 2px;
+            @include border-radius (12px);
+
+
+      }
+      p { padding: 6px 12px; color: black;
+}
+//end of header styling
+
+#footer{
+  background-color: $colour;
+  height: $height;
+  text-align: $position;
+  color: white;
+  clear:both;
+  padding:7px;
+
+}
+.container{  @extend a;}
+  #rightnav {
+    float: left;
+    clear: both;
+    margin-left:250px;
+    h6 {
+      color: black
+    }
+  }
+  #leftnav {
+
+    float: right;
+    margin-right:250px;
+    h6 {
+      color: black
+    }
+
+}
+  #image1{
+    @include border-radius (14px);
+
+
+  }
+table {
+  border: 1px solid #ccc;
+  padding: 20px;
+  color: #333;
+}
+
+tr {
+  @extend table;
+  border-color: green;
+}
+
+td {
+  @extend tr;
+  border-color: red;
+}
+

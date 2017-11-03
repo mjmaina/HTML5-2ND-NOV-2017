@@ -1,0 +1,112 @@
+/* line 1, ../sass/_site.scss */
+html,
+body,
+ul,
+ol,
+table,
+tr,
+td {
+  padding: 2px;
+  margin: auto;
+}
+
+/* line 8, ../sass/base.scss */
+body {
+  font: 100% Helvetica, sans-serif;
+  background-color: #FGEHTU;
+}
+
+/* line 16, ../sass/base.scss */
+#header {
+  text-align: center;
+  font-size: 25px;
+  height: 60px;
+}
+/* line 19, ../sass/base.scss */
+#header ul {
+  height: 50px;
+  background-color: black;
+  margin-top: 0px;
+  padding: 0px;
+  list-style: none;
+}
+/* line 28, ../sass/base.scss */
+#header li {
+  display: inline-block;
+  padding: 10px;
+}
+
+/* line 32, ../sass/base.scss */
+a, .container {
+  position: center;
+  color: white;
+  padding: 0px 20px;
+  text-decoration: none;
+  border: dotted 2px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  border-radius: 12px;
+}
+
+/* line 42, ../sass/base.scss */
+p {
+  padding: 6px 12px;
+  color: black;
+}
+
+/* line 46, ../sass/base.scss */
+#footer {
+  background-color: black;
+  height: 50px;
+  text-align: center;
+  color: white;
+  clear: both;
+  padding: 7px;
+}
+
+/* line 56, ../sass/base.scss */
+#rightnav {
+  float: left;
+  clear: both;
+  margin-left: 250px;
+}
+/* line 60, ../sass/base.scss */
+#rightnav h6 {
+  color: black;
+}
+
+/* line 64, ../sass/base.scss */
+#leftnav {
+  float: right;
+  margin-right: 250px;
+}
+/* line 68, ../sass/base.scss */
+#leftnav h6 {
+  color: black;
+}
+
+/* line 73, ../sass/base.scss */
+#image1 {
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  -ms-border-radius: 14px;
+  border-radius: 14px;
+}
+
+/* line 78, ../sass/base.scss */
+table, tr, td {
+  border: 1px solid #ccc;
+  padding: 20px;
+  color: #333;
+}
+
+/* line 84, ../sass/base.scss */
+tr, td {
+  border-color: green;
+}
+
+/* line 89, ../sass/base.scss */
+td {
+  border-color: red;
+}

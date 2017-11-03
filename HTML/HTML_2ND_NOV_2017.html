@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML LESSON</title>
+        <style>
+        #div1 {
+            width: 350px;
+            height: 70px;
+            padding: 10px;
+            border: 1px solid #aaaaaa;
+        }
+        </style>
+        <script>
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+        }
+        </script>
+    </head>
+
+    <body>
+        <table style="border-color: #00000 2px; padding-left: 40px; width: 700px; height: 500px; margin-left: 70px;">
+            
+                
+            <tr>
+                <td>
+                    <div>
+                        <!--basics of html
+                        -->
+                
+                    
+                            <form method="" name="" action="">
+
+                            <h1>This is my first form</h1>
+
+                            User name:
+
+
+                            <input type="text" id="name" placeholder="enter name" width="100px">
+                            <br /> <br />
+                            Sex:
+
+                            <input type="radio" id="sex" value="male" name="sex">
+                            <input type="radio" id="sex" value="Female" name="sex">
+                            <br /> <br />
+                            Search:
+
+                            <input type="search" placeholder="search anything">
+                            <br /> <br />
+                            The List Of Vegetables
+
+                            <ul>
+                                <li>spinach</li>
+                                <li>carrots</li>
+                                <li>oranges</li>
+                            </ul>
+                            <br /> <br />
+                            Users names:
+
+                            <select>
+                                <option value="toto">james</option>
+                                <option value="saab">tom</option>
+                                <option value="mercedes">william</option>
+                                <option value="audi">carol</option>
+                            </select>
+                            <br /> <br />
+                            <input type="checkbox">Click me &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+                            <input type="button" id="btn" name="btn" value="button">
+                            &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+                                <input type="submit" value="submit" name="submit">
+                            <br /> <br />
+
+                        </form>
+                    
+               
+
+                    </div>
+                </td>
+                <td>
+
+                    <div style="margin-left: 60px;">
+                        <div>
+
+                            <!--showing sample of audio display
+                            -->
+                            <p>The following is an audio file</p>
+                            <audio width=”300” height=”200” controls>
+                                <source src="audio.mp3" type="audio/mp3">
+                            </audio>
+
+
+                        </div>
+                        <div>
+                            <!--showing sample of drawing using SVG
+                           -->
+                            <p>The following is an image display of a circle</p>
+                            <svg width="100" height="100">
+                                <circle cx="50" cy="50" r="40" stroke="black" stroke-width="4" fill="blue" />
+                            </svg>
+
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr style=" padding-left: 20px;">
+                <td>
+                    <div>
+                        <!--showing sample of plugin of the html
+                          -->
+                        <p>The following is a plugin of a video</p>
+                        <br /> <br />
+                        <div style="width: 300; height: 200; border-color: #00000 2px;">
+                            <iframe width="300" height="200" src="https://www.youtube.com/embed/vt9UZo32KMk" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </td>
+            
+                <td>
+                    <div>
+                        <!--showing sample of html5 Apis
+                          -->
+                        <p>The following is a sample of html5 Apis</p>
+
+                        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            
+                        </div>
+                        <br /><br />
+
+                        <img id="drag1" src="image.jpeg" draggable="true"
+                             ondragstart="drag(event)" width="336" height="69">
+                        
+                    </div>
+                </td>
+            </tr>
+                
+        </table>
+    </body>
+
+</html>
